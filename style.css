@@ -1,0 +1,54 @@
+@font-face {
+    font-family: 'ubuntu-regular'; /*a name to be used later*/
+    src: url('Ubuntu.ttf'); /*URL to font*/
+}
+@font-face {
+  font-family: 'FiraMono';
+  src: url('FiraMono.ttf')
+}
+
+body {
+  background-color: #5d3a14;
+  color: #1d1308;
+  font-family: 'ubuntu-regular';
+  text-align: center;
+}
+
+#pc {
+height: 200px;
+width: auto;
+}
+
+
+/* animation */
+.type {
+  color: white;
+  background-color: black;
+  margin: 25px 25% 25px 25%;
+  position: sticky;
+}
+.type #welcome{
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 0; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(30, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: white; }
+}
+
+
+
